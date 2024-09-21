@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (scrollTop >= mainHeader.offsetHeight) {
             nav.style.position = "fixed";
             nav.style.top = "0";
-            nav.style.background = "rgba(255, 255, 255, 0.0)";
+            nav.style.background = "rgba(242, 242, 242, 0.8)";
             nav.style.width= "100%"
             document.body.style.marginTop = `${navHeight}px`;
         } else {

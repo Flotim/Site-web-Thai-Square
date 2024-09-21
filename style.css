@@ -46,7 +46,6 @@ nav{
 
 
 
-
 img{
     display: flex;
     width: 100%;
@@ -59,8 +58,7 @@ a{
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: rgb(253, 244, 244)
-
+    background-color: rgba(239,233,224,255)
 }
 
 .nav-logo{
