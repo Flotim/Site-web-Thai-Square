@@ -28,8 +28,3 @@ document.addEventListener("scroll", function() {
 
 
 
-
-// effet de réaparition de la navbar
-//
-
-

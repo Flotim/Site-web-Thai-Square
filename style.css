@@ -30,7 +30,15 @@ html {
     
 }
 
-
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
 
 nav{
     position: fixed;
@@ -55,7 +63,6 @@ nav{
 
 
 img{
-    display: flex;
     width: 100%;
 }
 
@@ -67,7 +74,10 @@ body{
     font-family: 'Montserrat+Alternates', sans-serif;
     margin: 0;
     background-color: #E3DAC7;
+    height: 100vh;
 }
+
+
 
 
 
@@ -127,9 +137,9 @@ header{
     align-items: center;
     justify-content: space-between;
     overflow-y: hidden; 
-   
-
 }
+
+
 
 
 .Thaisquare{
@@ -160,33 +170,33 @@ header h2{
 
 
 #section1{
-    overflow-y: hidden;
+    overflow-x: hidden;
     height: 100vh;
-}
-
-
-.localisation{
+    width: 100%;
     display: flex;
-    margin-top: 6rem;
+    flex-direction: row;
     font-family:'gyst', sans-serif;
-    color:#453F1A;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     font-weight: 200;
 
 }
 
 
+
 .textelocal{
-    padding-right: 250px;
-    
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .titreplat{
-    margin-bottom: 5rem;
     letter-spacing: -2px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .titreplat H1{
@@ -196,28 +206,47 @@ header h2{
 }
 
 .adresse{
-    margin-bottom: 1.5rem; /* Ajustez la marge inférieure selon vos préférences */
     font-family: "Montserrat Alternates", sans-serif;
+    color: #453F1A;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .description{
-    margin-top: 2rem;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgfacade{
+    flex: 1;
+    height: 100%; /* Assure-toi que sa hauteur est définie */
+    width: 100%;  /* Si nécessaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
-
-
+.imgfacade img{
+    width: 70%;
+    height: 50%;
+    border-radius: 3%;
+}
 
 
 #section2{
-    background-image: url(images/motif-bois-brun-i46451.jpeg);
-    background-size: cover;
+    background-color: #60591B;
 }
 
 
@@ -386,9 +415,6 @@ footer a{
            
     }
 
-    .textelocal{
-        padding-right: 0;
-    }
 
     footer{
         grid-template-columns: 1fr 200px;
@@ -410,13 +436,69 @@ footer a{
         display: none;
     }
 
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     header H1{
         font-size: 90px;
     }
 
+    nav{
+        flex: 2;
+
+    }
+
+    .links{
+        color: #000;
+    }
+
+    #section1{
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textelocal{
+        padding-top: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titreplat H1{
+        font-size: 8vh;
+    }
+
+    .adresse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:25px;
+        text-align: center;
+    }
+
+    .adresse h3{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
     .imagemenu{
         display: none;
-       
     }
     
     .menu{
