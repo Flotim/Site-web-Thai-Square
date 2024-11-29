@@ -50,13 +50,19 @@ nav{
     gap: 2rem;
     transition: top 0.5s ease-in-out, position 0.5s ease-in;
     z-index: 1000;
+    background: linear-gradient(to top,transparent 10% ,#60591B );
+    width: 100%;
+    padding-right: 8vw;
     
 }
 
+.logo{
+    width: 15vw;
+}
 
 .telephone a{
     text-decoration: none;
-    color: #453F1A;
+    color:#E3DAC7;
        
 }
 
@@ -86,21 +92,18 @@ body{
     display: flex;
     align-items: center;
     gap: 3rem;
-    text-shadow:1vh 0vh 3vh #453F1A;
+    text-shadow:1vh 0vh 3vh #E3DAC7 ;
 
 }
 
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
-    color: #453F1A;
+    color: #E3DAC7;
 }
 
 
-#link1 a{
-    color: #453F1A ;
-    
-}
+
 
 .link a::after{
     content: "";
@@ -322,6 +325,7 @@ header h2{
 
 
 .envie{
+    font-family: "Montserrat Alternates", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -346,7 +350,7 @@ header h2{
 
 .boutoncarte a{
     text-decoration: none;
-    color:rgb(150, 62, 62);
+    color:#E3DAC7;
     word-spacing: 1px;
 }
 
@@ -450,6 +454,10 @@ footer a{
     nav{
         flex: 2;
 
+    }
+
+    .logo{
+        width: 30%;        
     }
 
     .links{
